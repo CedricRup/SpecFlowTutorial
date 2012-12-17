@@ -18,7 +18,7 @@ namespace Santa.Acceptance.Tests
         [When(@"I calculate his/her kindness factor for (.*)")]
         public void WhenICalculateHisHerKindnessFactorFor(int year)
         {
-            Result = KindnessCalculator.Calculate(Deeds);
+            Result = KindnessCalculator.Calculate(Deeds,year);
         }
 
         protected int Result { get; set; }

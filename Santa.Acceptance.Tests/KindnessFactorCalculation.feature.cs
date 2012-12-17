@@ -33,7 +33,7 @@ namespace Santa.Acceptance.Tests
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Kindness factor calculation", "In order to know if a child has been kind\r\nAs Santa \r\nI want to calculate a kindn" +
-                    "ess fator", ProgrammingLanguage.CSharp, ((string[])(null)));
+                    "ess factor", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         

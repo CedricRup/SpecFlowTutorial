@@ -1,7 +1,7 @@
 ﻿Feature: Kindness factor calculation
 	In order to know if a child has been kind
 	As Santa 
-	I want to calculate a kindness fator
+	I want to calculate a kindness factor
 
 
 Scenario: Mix of good and bad

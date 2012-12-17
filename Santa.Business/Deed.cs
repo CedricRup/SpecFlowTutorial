@@ -14,5 +14,14 @@ namespace Santa.Business
             return Force*(Kind == Kind.Good ? 1 : -1);
         }
 
+        public int AccountableYear
+        {
+            get
+            {
+                var year = Date.Year;
+                return Date < new DateTime(year, 12, 25) ? year : ++year;
+            }
+        }
+
     }
 }
