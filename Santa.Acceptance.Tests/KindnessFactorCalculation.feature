@@ -14,3 +14,10 @@ Scenario: Mix of good and bad
 	When I calculate his/her kindness factor for 2012
 	Then the result should be -5
 
+Scenario: Records spans two years
+	Given child with this record
+	| Title                      | Kind | Force | Date       |
+	| Crashed Dad's car          | Bad  | 100   | 2011-12-24 |
+	| Gave a candy to his sister | Good | 1     | 2012-12-24 |
+	When I calculate his/her kindness factor for 2012
+	Then the result should be 1

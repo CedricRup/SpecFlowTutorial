@@ -107,6 +107,39 @@ this.ScenarioSetup(scenarioInfo);
 #line hidden
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Records spans two years")]
+        public virtual void RecordsSpansTwoYears()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Records spans two years", ((string[])(null)));
+#line 17
+this.ScenarioSetup(scenarioInfo);
+#line hidden
+            TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Title",
+                        "Kind",
+                        "Force",
+                        "Date"});
+            table2.AddRow(new string[] {
+                        "Crashed Dad\'s car",
+                        "Bad",
+                        "100",
+                        "2011-12-24"});
+            table2.AddRow(new string[] {
+                        "Gave a candy to his sister",
+                        "Good",
+                        "1",
+                        "2012-12-24"});
+#line 18
+ testRunner.Given("child with this record", ((string)(null)), table2, "Given ");
+#line 22
+ testRunner.When("I calculate his/her kindness factor for 2012", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 23
+ testRunner.Then("the result should be 1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore
